@@ -5,7 +5,7 @@ const NavGroup = props => {
   return (
     <li className="nav-group">
       {props.title}
-      <ul>{props.children}</ul>
+      <ul className="nav-group-item">{props.children}</ul>
     </li>
   );
 };
