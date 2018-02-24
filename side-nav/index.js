@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Nav from "./Nav";
 import NavGroup from "./NavGroup";
 import NavItem from "./NavItem";
-import Link from "./link";
+import Link from "./Link";
 
 const App = () => {
   return (
