@@ -1,11 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Nav from "./Nav";
+import NavGroup from "./NavGroup";
+import NavItem from "./NavItem";
 import Link from "./link";
 
 const App = () => {
   return (
     <div>
-      <Link href="http://www.google.com">www.google.com</Link>
+      <Nav>
+        <NavGroup>
+          <NavItem>
+            <Link href="http://www.google.com">www.google.com</Link>
+          </NavItem>
+          <NavItem>
+            <Link href="http://www.google.com">www.google.com</Link>
+          </NavItem>
+        </NavGroup>
+        <NavItem>
+          <Link href="http://www.google.com">www.google.com</Link>
+        </NavItem>
+      </Nav>
     </div>
   );
 };
