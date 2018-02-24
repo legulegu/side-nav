@@ -15,8 +15,10 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-preset-react-app": "^3.1.1"
+  },
   "scripts": {
-    "dev": "parcel ./demo/index.html"
+    "dev": "parcel index.html"
   }
 }
