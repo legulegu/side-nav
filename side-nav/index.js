@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Nav>
-        <NavGroup>
+        <NavGroup title="links">
           <NavItem>
             <Link href="http://www.google.com">www.google.com</Link>
           </NavItem>
