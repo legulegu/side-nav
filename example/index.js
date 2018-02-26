@@ -12,10 +12,7 @@ class App extends React.Component {
         <Nav>
           <NavGroup title="links">
             <NavItem>
-              <Link href="http://www.google.com">www.google.com</Link>
-            </NavItem>
-            <NavItem>
-              <Link href="http://www.google.com">www.google.com</Link>
+              <Link href="http://www.baidu.com">www.baidu.com</Link>
             </NavItem>
           </NavGroup>
           <NavGroup title="links">
@@ -24,7 +21,7 @@ class App extends React.Component {
             </NavItem>
           </NavGroup>
           <NavItem>
-            <Link href="http://www.google.com">www.google.com</Link>
+            <Link href="http://www.legulegu.com">www.legulegu.com</Link>
           </NavItem>
         </Nav>
       </React.Fragment>
