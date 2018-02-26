@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import "./nav-item.scss";
 
 const NavItem = props => {
@@ -7,7 +8,10 @@ const NavItem = props => {
     props.handleNavItemClick && props.handleNavItemClick(e, props.groupIndex, props.index);
   };
   return (
-    <li className="nav-item" onClick={handleClick}>
+    <li
+      className={classNames("nav-item", props.className)}
+      onClick={handleClick}
+    >
       {props.children}
     </li>
   );
