@@ -36,7 +36,10 @@ class Nav extends React.Component {
       }
       if (child.type === NavItem) {
         navItemIndex++;
-        return React.cloneElement(child, { index: navItemIndex });
+        return React.cloneElement(child, {
+          level: "root",
+          index: navItemIndex
+        });
       }
     });
     return (
