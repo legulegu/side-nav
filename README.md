@@ -8,7 +8,7 @@ Forget about the style of the component, I am not a UX. HAHA. Feel free to chang
 
 How to use it?
 
-```html
+```jsx
 import Nav from "../side-nav/Nav";
 import NavGroup from "../side-nav/NavGroup";
 import NavItem from "../side-nav/NavItem";
