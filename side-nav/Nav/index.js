@@ -9,17 +9,24 @@ class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      openedGroup: props.openedGroup
+      openedGroup: props.openedGroup,
+      selectedGroup: props.selectedGroup,
+      selectedNavItem: props.selectedNavItem
     };
     this.handleOnNavGroupClick = this.handleOnNavGroupClick.bind(this);
+    this.handleNavItemClick = this.handleNavItemClick.bind(this);
   }
 
   handleOnNavGroupClick(e, index) {
     if (index === this.state.openedGroup) {
       this.setState({ openedGroup: 0 });
     } else {
-      this.setState({ openedGroup: index });
+      this.setState({ openedGroup: index});
     }
+  }
+
+  handleNavItemClick(e, groupIndex, index) {
+    this.setState({ selectedGroup: groupIndex, selectedNavItem: index });
   }
 
   render() {
@@ -31,14 +38,16 @@ class Nav extends React.Component {
         return React.cloneElement(child, {
           index: navGroupIndex,
           show: this.state.openedGroup === navGroupIndex,
-          handleOnNavGroupClick: this.handleOnNavGroupClick
+          handleOnNavGroupClick: this.handleOnNavGroupClick,
+          handleNavItemClick: this.handleNavItemClick
         });
       }
       if (child.type === NavItem) {
         navItemIndex++;
         return React.cloneElement(child, {
-          level: "root",
-          index: navItemIndex
+          groupIndex: 0,
+          index: navItemIndex,
+          handleNavItemClick: this.handleNavItemClick
         });
       }
     });

@@ -21,6 +21,9 @@ class App extends React.Component {
             <NavItem>
               <Link href="http://www.google.com" target="_blank">www.google.com</Link>
             </NavItem>
+            <NavItem>
+              <Link href="http://www.bing.com" target="_blank">www.bing.com</Link>
+            </NavItem>
           </NavGroup>
           <NavItem>
             <Link href="http://www.legulegu.com">www.legulegu.com</Link>

@@ -10,8 +10,9 @@ const NavGroup = props => {
   const clonedChildren = React.Children.map(props.children, child => {
     navItemIndex++;
     return React.cloneElement(child, {
-      level: props.title,
-      index: navItemIndex
+      groupIndex: props.index,
+      index: navItemIndex,
+      handleNavItemClick: props.handleNavItemClick
     });
   });
   return (
