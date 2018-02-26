@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Nav from "./Nav";
-import NavGroup from "./NavGroup";
-import NavItem from "./NavItem";
-import Link from "./Link";
+import Nav from "../side-nav/Nav";
+import NavGroup from "../side-nav/NavGroup";
+import NavItem from "../side-nav/NavItem";
+import Link from "../side-nav/Link";
 
 class App extends React.Component {
   render() {
