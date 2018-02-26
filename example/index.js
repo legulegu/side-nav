@@ -5,11 +5,13 @@ import NavGroup from "../side-nav/NavGroup";
 import NavItem from "../side-nav/NavItem";
 import Link from "../side-nav/Link";
 
+import "./index.scss";
+
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Nav>
+        <Nav className="customized-nav-container">
           <NavGroup title="links">
             <NavItem>
               <Link href="http://www.baidu.com">www.baidu.com</Link>

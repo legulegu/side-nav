@@ -1,6 +1,7 @@
 import React from "react";
 import NavGroup from "../NavGroup";
 import NavItem from "../NavItem";
+import classNames from "classnames";
 
 import "./nav.scss";
 
@@ -38,7 +39,11 @@ class Nav extends React.Component {
         return React.cloneElement(child, { index: navItemIndex });
       }
     });
-    return <ul className="nav">{clonedChildren}</ul>;
+    return (
+      <ul className={classNames("nav", this.props.className)}>
+        {clonedChildren}
+      </ul>
+    );
   }
 }
 
