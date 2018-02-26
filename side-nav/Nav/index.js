@@ -14,7 +14,11 @@ class Nav extends React.Component {
   }
 
   handleOnNavGroupClick(e, index) {
-    this.setState({ openedGroup: index });
+    if (index === this.state.openedGroup) {
+      this.setState({ openedGroup: 0 });
+    } else {
+      this.setState({ openedGroup: index });
+    }
   }
 
   render() {
