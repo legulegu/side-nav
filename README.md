@@ -12,7 +12,7 @@ How to use it?
 import Nav from "../side-nav/Nav";
 import NavGroup from "../side-nav/NavGroup";
 import NavItem from "../side-nav/NavItem";
-import Link from "../side-nav/Link";
+import Link from "../side-nav/Link"; // or you can change to React-Router Link
 
 <Nav className="customized-nav-container">
     <NavItem>
