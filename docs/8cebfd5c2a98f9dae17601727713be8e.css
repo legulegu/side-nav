@@ -1,0 +1,46 @@
+.nav-group {
+  background-color: #E3EDFA;
+  line-height: 32px;
+  color: #0277BD;
+  font-weight: bold; }
+
+.nav-group-title {
+  padding-left: 30px; }
+
+.nav-group-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: none; }
+
+.show {
+  display: block; }
+.nav-item {
+  background-color: #F5FBFF;
+  line-height: 32px;
+  padding-left: 30px;
+  border: 1px solid #F5FBFF; }
+  .nav-item:hover {
+    border: 1px solid #1976D2; }
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: Open Sans,Arial,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Lantinghei SC,STHeiti,WenQuanYi Micro Hei,SimSun,sans-serif; }
+.link {
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  width: 100%; }
+  .link:link {
+    color: #01579B; }
+  .link:visited {
+    color: #01579B; }
+  .link:hover {
+    color: #01579B; }
+  .link:active {
+    color: #01579B; }
+.customized-nav-container {
+  width: 200px; }
