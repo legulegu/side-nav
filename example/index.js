@@ -12,22 +12,28 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Nav className="customized-nav-container">
-          <NavGroup title="links">
-            <NavItem>
-              <Link href="http://www.baidu.com">www.baidu.com</Link>
-            </NavItem>
-          </NavGroup>
-          <NavGroup title="links">
-            <NavItem>
-              <Link href="http://www.google.com" target="_blank">www.google.com</Link>
-            </NavItem>
-            <NavItem>
-              <Link href="http://www.bing.com" target="_blank">www.bing.com</Link>
-            </NavItem>
-          </NavGroup>
           <NavItem>
-            <Link href="http://www.legulegu.com">www.legulegu.com</Link>
+            <Link href="http://www.legulegu.com" target="_blank">www.legulegu.com</Link>
           </NavItem>
+          <NavGroup title="波段分析">
+            <NavItem>
+              <Link href="https://legulegu.com/stockdata/market-analysis-shanghai" target="_blank">上证指数波段分析</Link>
+            </NavItem>
+            <NavItem>
+              <Link href="https://legulegu.com/stockdata/market-analysis-chuangye" target="_blank">创业板波段分析</Link>
+            </NavItem>
+            <NavItem>
+              <Link href="https://legulegu.com/stockdata/market-analysis-average-price" target="_blank">A股p平均股价</Link>
+            </NavItem>
+          </NavGroup>
+          <NavGroup title="基本数据面">
+            <NavItem>
+              <Link href="https://legulegu.com/stockdata/market_pe" target="_blank">A股整体市盈率</Link>
+            </NavItem>
+            <NavItem>
+              <Link href="https://legulegu.com/stockdata/shanghaiPE" target="_blank">上证A市盈率</Link>
+            </NavItem>
+          </NavGroup>
         </Nav>
       </React.Fragment>
     );
