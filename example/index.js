@@ -17,7 +17,7 @@ class App extends React.Component {
           </NavGroup>
           <NavGroup title="links">
             <NavItem>
-              <Link href="http://www.google.com">www.google.com</Link>
+              <Link href="http://www.google.com" target="_blank">www.google.com</Link>
             </NavItem>
           </NavGroup>
           <NavItem>
