@@ -2,6 +2,12 @@
 
 A React Side Nav Component
 
+```
+openedGroup: props.openedGroup,
+selectedGroup: props.selectedGroup,
+selectedNavItem: props.selectedNavItem
+```
+
 Forget about the style of the component, I am not a UX. HAHA. Feel free to change the style as you want.
 
 ![side-nav](https://user-images.githubusercontent.com/5471228/36662172-7c1a6014-1b18-11e8-92eb-32f330a4437b.gif)
