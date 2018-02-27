@@ -9,7 +9,11 @@ const NavItem = props => {
   };
   return (
     <li
-      className={classNames("nav-item", props.className)}
+      className={classNames(
+        "nav-item",
+        { "nav-item-selected": props.selected },
+        props.className
+      )}
       onClick={handleClick}
     >
       {props.children}
